@@ -54,7 +54,7 @@ export default {
     'July 2020 - August 2021',
     'Nodejs, Java and .Net Core developer in the company.',
     'Responsible for developing Node.js, Java and .Net Core processes in the company.',
-    'September 2020 - At present', //53
+    'September 2021 - At present', //53
     'Software developer in the company',
     'Responsible for developing full stack in the company in Oracle University area.',
     /*56*/'Master in Applied Artificial Intelligence'
