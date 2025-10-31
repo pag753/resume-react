@@ -9,8 +9,8 @@ function App(props) {
   const { arr } = (languaje === 'english')? english : spanish
   useEffect(() => {
 	const tipo = (languaje === 'english')? 1 : 2
-	axios.post('https://resumepablo.herokuapp.com/telegram', {
-            tipo: num,
+	axios.post('/telegram', {
+            tipo,
             device: navigator.userAgent
         }, {
             headers: {
