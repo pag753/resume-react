@@ -9,10 +9,14 @@ function App(props) {
   const { arr } = (languaje === 'english')? english : spanish
   useEffect(() => {
 	const tipo = (languaje === 'english')? 1 : 2
-	axios.get('/index.php/welcome/telegram', {
-		params: {
-			tipo,
-			device: navigator.userAgent
+	axios.post('https://resumepablo.herokuapp.com/telegram', {
+            tipo: num,
+            device: navigator.userAgent
+        }, {
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "*",
+                "Access-Control-Allow-Headers": "*"
 		}
 	})
   })
