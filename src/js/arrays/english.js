@@ -59,4 +59,4 @@ export default {
     'Responsible for developing full stack in the company in Oracle University area.',
     /*56*/'Master in Applied Artificial Intelligence'
   ]
-}
+};
