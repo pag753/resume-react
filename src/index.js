@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <Complete languaje='english' />,
   },
   {
-    path: "/#/spanish",
+    path: "/spanish",
     element: <Complete languaje='spanish' />,
   }
 ]);
