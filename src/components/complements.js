@@ -39,7 +39,7 @@ function Complements() {
   return (
     <div style={{ textAlign: 'center' }}>
       <button type="button" onClick={() => goTo('/')}>English</button><br></br>
-      <button type="button" onClick={() => goTo('/spanish')}>Spanish</button><br></br>
+      <button type="button" onClick={() => goTo('/#/spanish')}>Spanish</button><br></br>
       <button type="button" onClick={() => downloadPDF('english')}><i className="fa fa-file-pdf" aria-hidden="true" /> PDF English</button><br></br>
       <button type="button" onClick={() => downloadPDF('spanish')}><i className="fa fa-file-pdf" aria-hidden="true" /> PDF Spanish</button>
     </div>
