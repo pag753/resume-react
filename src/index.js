@@ -12,11 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Complete languaje='english' />,
+    element: <Complete language="english" />,
   },
   {
     path: "/spanish",
-    element: <Complete languaje='spanish' />,
+    element: <Complete language="spanish" />,
   }
 ]);
 root.render(

@@ -3,7 +3,7 @@ export default {
     'Resume Pablo de Jesús',
     'Full Stack Developer',
     'Career Summary',
-    'Software engineer and full stack developer with more than 5 years of experience working in person and remotely with communication in English and Spanish with Mexican, American, Indian and South American collaborators.',
+    'Software engineer and full stack developer with more than 7 years of experience working in person and remotely with communication in English and Spanish with Mexican, American, Indian and South American collaborators.',
     'Work Experience',
     'Full Stack Developer',
     'September 2018 - December 2018',
@@ -20,10 +20,10 @@ export default {
     "Description",
     "Platform for automate in efficiently way the control of laundry processes and the company administration with the implementation of the project to obtain a better fastest and internal control.",
     "Skills and Tools",
-    "Languajes",
+    "Languages",
     "Others",
     "Education",
-    "Computer Systems Enginer",
+    "Computer Systems Engineer",
     "Awards",
     "State programming competition",
     'In the',
@@ -52,11 +52,11 @@ export default {
     //Alphacredit
     'Alphacredit',
     'July 2020 - August 2021',
-    'Nodejs, Java and .Net Core developer in the company.',
+    'Node.js, Java and .Net Core developer in the company.',
     'Responsible for developing Node.js, Java and .Net Core processes in the company.',
-    'September 2021 - At present', //53
+    'September 2021 - Present', //53
     'Software developer in the company',
     'Responsible for developing full stack in the company in Oracle University area.',
-    /*56*/'Master in Applied Artificial Intelligence'
+    /*56*/"Master's Degree in Applied Artificial Intelligence"
   ]
 };

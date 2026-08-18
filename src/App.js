@@ -1,25 +1,23 @@
 import { useEffect } from 'react';
 import english from './js/arrays/english';
 import spanish from './js/arrays/spanish';
-import axios from "axios";
+import { sendTelegramEvent, TELEGRAM_EVENT_TYPES } from './js/telegram';
+
 const num = Math.floor(Math.random() * 6) + 1;
 import(`./styles/pillar-${num}.css`);
+
 function App(props) {
-  const { languaje } = props;
-  const { arr } = (languaje === 'english') ? english : spanish;
+  const language = (props.language || props.languaje) === 'spanish' ? 'spanish' : 'english';
+  const { arr } = (language === 'english') ? english : spanish;
+
   useEffect(() => {
-    const tipo = (languaje === 'english') ? 1 : 2;
-    axios.post('/telegram', {
-      tipo,
-      device: navigator.userAgent
-    }, {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "*",
-        "Access-Control-Allow-Headers": "*"
-      }
-    });
-  });
+    const tipo = (language === 'english')
+      ? TELEGRAM_EVENT_TYPES.VIEW_ENGLISH
+      : TELEGRAM_EVENT_TYPES.VIEW_SPANISH;
+
+    sendTelegramEvent(tipo);
+  }, [language]);
+
   return (
     <div className="App">
       <article className="resume-wrapper text-center position-relative">
@@ -445,7 +443,7 @@ function App(props) {
                       <li className="mb-2">
                         <div className="resume-degree font-weight-bold">{arr[56]}</div>
                         <div className="resume-degree-org"><a href="https://tec.mx/es"
-                          target="_blank" rel="noreferrer">ITESM Tecnológico de Monterrey</a></div>
+                          target="_blank" rel="noreferrer">Tecnológico de Monterrey</a></div>
                         <div className="resume-degree-time">2023 - 2025</div>
                       </li>
                     </ul>

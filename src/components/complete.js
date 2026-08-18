@@ -1,9 +1,11 @@
-import Complements from "./complements";
-import App from "../App";
+import Complements from './complements';
+import App from '../App';
+
 const Complete = (props) => {
-  const {languaje} = props;
+  const language = props.language || props.languaje || 'english';
+
   return (
-    <><Complements /><App languaje={languaje} /><Complements /></>
+    <><Complements /><App language={language} /><Complements /></>
   );
 };
 

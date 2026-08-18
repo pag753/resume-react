@@ -4,49 +4,39 @@
  * reconozca 'module.exports'.
  */
 module.exports = {
-  // 1. Indicar el parser de Babel
-  parser: '@babel/eslint-parser', 
-  
-  // 2. Entornos
+  parser: '@babel/eslint-parser',
+  ignorePatterns: ['build/', 'node_modules/'],
   env: {
-    browser: true, // Esto es para los archivos JSX/JS de la aplicación
-    node: true,    // <-- ¡AÑADIDO! Esto permite que el archivo .eslintrc.js use module.exports
+    browser: true,
+    jest: true,
+    node: true,
     es2021: true,
   },
-  
-  // 3. Reglas y Plugins
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended', 
-    'plugin:react-hooks/recommended', 
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
   ],
   plugins: [
     'react',
     'react-hooks',
   ],
-
-  // 4. Configuración crítica del Parser
   parserOptions: {
-    requireConfigFile: false, 
+    requireConfigFile: false,
     babelOptions: {
       presets: ['@babel/preset-react'],
     },
-    
     ecmaFeatures: {
-      jsx: true, 
+      jsx: true,
     },
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  
-  // 5. Configuración de React
   settings: {
     react: {
-      version: 'detect', 
+      version: 'detect',
     },
   },
-  
-  // 6. Reglas (ejemplos)
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
