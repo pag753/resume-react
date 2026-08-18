@@ -444,7 +444,7 @@ function App(props) {
                         <div className="resume-degree font-weight-bold">{arr[56]}</div>
                         <div className="resume-degree-org"><a href="https://tec.mx/es"
                           target="_blank" rel="noreferrer">Tecnológico de Monterrey</a></div>
-                        <div className="resume-degree-time">2023 - 2025</div>
+                        <div className="resume-degree-time">2024 - 2026</div>
                       </li>
                     </ul>
                   </div>
